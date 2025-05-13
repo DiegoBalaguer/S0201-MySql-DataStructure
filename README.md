@@ -230,4 +230,4 @@ These exercises are designed to give you practical experience with database mode
 
 After creating the databases, populate the tables with test data to verify that the relationships work correctly.
 
-Happy modeling! 🚀"# S0201-MySql-DataStructure" 
+Happy modeling! 🚀
