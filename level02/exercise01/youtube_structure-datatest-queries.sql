@@ -143,6 +143,7 @@ DROP TABLE IF EXISTS user;
 CREATE TABLE IF NOT EXISTS user (
   user_id bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   name varchar(50) NOT NULL,
+  email varchar(50) NOT NULL,
   password varchar(60) NOT NULL,
   birth_date date NOT NULL,
   gender_id int(10) unsigned NOT NULL,
@@ -282,27 +283,28 @@ INSERT INTO country (country_Id, name) VALUES
 
 
 -- Tabla user (20 usuarios)
-INSERT INTO user (name, password, birth_date, gender_id, country_id, postal_code) VALUES
-('John Smith', 'password123', '1990-05-15', 1, 'GBR', 'SW1A 1AA'),
-('Emily Johnson', 'securepass', '1985-08-22', 2, 'GBR', 'EC1A 1BB'),
-('Michael Brown', 'mypass123', '1992-11-30', 1, 'USA', '10001'),
-('Sarah Davis', 'sarahpass', '1988-03-10', 2, 'USA', '90210'),
-('David Wilson', 'david1234', '1995-07-18', 1, 'CAN', 'M5V 2T6'),
-('Jessica Lee', 'jesspass', '1991-09-25', 2, 'AUS', '2000'),
-('Robert Taylor', 'robertpass', '1987-12-05', 1, 'GBR', 'W1A 0AX'),
-('Jennifer Martin', 'jenny123', '1993-04-20', 2, 'USA', '33139'),
-('William Anderson', 'willpass', '1989-06-12', 1, 'CAN', 'V6B 1H4'),
-('Elizabeth Thomas', 'lizpass', '1994-02-28', 2, 'GBR', 'WC2N 5DU'),
-('James Jackson', 'jamespass', '1990-10-08', 1, 'AUS', '3000'),
-('Margaret White', 'maggie123', '1986-07-14', 2, 'USA', '94102'),
-('Charles Harris', 'charlesp', '1992-01-17', 1, 'GBR', 'E1 6AN'),
-('Patricia Clark', 'patricia1', '1984-09-03', 2, 'CAN', 'H3B 2Y5'),
-('Thomas Lewis', 'tompass', '1996-12-22', 1, 'GBR', 'SE1 7PB'),
-('Susan Walker', 'susie123', '1991-05-19', 2, 'USA', '60601'),
-('Daniel Hall', 'danpass', '1988-08-11', 1, 'AUS', '4000'),
-('Nancy Allen', 'nancypass', '1993-03-27', 2, 'GBR', 'NW1 6XE'),
-('Matthew Young', 'mattpass', '1985-11-09', 1, 'CAN', 'M5J 2T3'),
-('Lisa King', 'lisapass', '1997-04-15', 2, 'USA', '10036');
+INSERT INTO user (name, email, password, birth_date, gender_id, country_id, postal_code) VALUES
+('John Smith', 'JonhEmail@email.com', 'password123', '1990-05-15', 1, 'GBR', 'SW1A 1AA'),
+('Emily Johnson', 'EmilyEmail@email.com', 'securepass', '1985-08-22', 2, 'GBR', 'EC1A 1BB'),
+('Michael Brown', 'MichaelEmail@email.com', 'mypass123', '1992-11-30', 1, 'USA', '10001'),
+('Sarah Davis', 'SarahEmail@email.com', 'sarahpass', '1988-03-10', 2, 'USA', '90210'),
+('David Wilson', 'DavidEmail@email.com', 'david1234', '1995-07-18', 1, 'CAN', 'M5V 2T6'),
+('Jessica Lee', 'JessicaEmail@email.com', 'jesspass', '1991-09-25', 2, 'AUS', '2000'),
+('Robert Taylor', 'RobertEmail@email.com', 'robertpass', '1987-12-05', 1, 'GBR', 'W1A 0AX'),
+('Jennifer Martin', 'JenniferEmail@email.com', 'jenny123', '1993-04-20', 2, 'USA', '33139'),
+('William Anderson', 'WilliamEmail@email.com', 'willpass', '1989-06-12', 1, 'CAN', 'V6B 1H4'),
+('Elizabeth Thomas', 'ElizabethEmail@email.com', 'lizpass', '1994-02-28', 2, 'GBR', 'WC2N 5DU'),
+('James Jackson', 'JamesEmail@email.com', 'jamespass', '1990-10-08', 1, 'AUS', '3000'),
+('Margaret White', 'MargaretEmail@email.com', 'maggie123', '1986-07-14', 2, 'USA', '94102'),
+('Charles Harris', 'CharlesEmail@email.com', 'charlesp', '1992-01-17', 1, 'GBR', 'E1 6AN'),
+('Patricia Clark', 'PatriciaEmail@email.com', 'patricia1', '1984-09-03', 2, 'CAN', 'H3B 2Y5'),
+('Thomas Lewis', 'ThomasEmail@email.com', 'tompass', '1996-12-22', 1, 'GBR', 'SE1 7PB'),
+('Susan Walker', 'SusanEmail@email.com', 'susie123', '1991-05-19', 2, 'USA', '60601'),
+('Daniel Hall', 'DanielEmail@email.com', 'danpass', '1988-08-11', 1, 'AUS', '4000'),
+('Nancy Allen', 'NancyEmail@email.com', 'nancypass', '1993-03-27', 2, 'GBR', 'NW1 6XE'),
+('Matthew Young', 'MatthewEmail@email.com', 'mattpass', '1985-11-09', 1, 'CAN', 'M5J 2T3'),
+('Lisa King', 'LisaEmail@email.com', 'lisapass', '1997-04-15', 2, 'USA', '10036');
+
 
 
 -- Tabla channel
